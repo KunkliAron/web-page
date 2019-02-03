@@ -1,0 +1,10 @@
+Oldal készítõje: Kunkli Áron
+Elérési cím: web.uni-corvinus.hu/~gfcuvj
+Téma: A weboldalam egy fiktív kávéházról és annak bõvített helyeirõl szól. Lehet jelentkeni baristának valamint rendelni kávékínálatunkból.
+A fényképgallériát átvettem, nem én írtam.
+Saját betûtípus az egész oldalon a betutipusok mappában található "OpenSansCondensed-Light.ttf" néven.
+A job.html oldalon szereplõ HTML5 form elemek:
+-label
+-option
+-datalist
+-input (submit,reset,text,email,tel,date)
