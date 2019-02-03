@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {font-family: "font";
+    src: url('betutipus/OpenSansCondensed-Light.ttf'); }
+    
+html{
+    background: rgb(255, 255, 255);
+    font-family: font;
+    padding: 0px;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.home-bg {
+    background-image: url("kepek/background2.jpeg");
+    height: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+.about-bg {
+    background: url("kepek/about.jpg");
+    height: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+.menu-bg {
+    background-image: url("kepek/menu.jpeg");
+    height: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+.webshop-bg {
+    background-image: url("kepek/webshop.jpg");
+    height: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+.contact-bg {
+    background-image: url("kepek/contact.jpg");
+    height: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    }
+.job-bg {
+    background-image: url("kepek/contact.jpg");
+    height: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    }
+figcaption { 
+    display: block;
+    text-align: left;
+}
+header{
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    font-size: 2.5vw;
+    width: 100%;
+    display: inline;
+}
+.menu{
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+}
+.menu h2{
+    font-weight: 900;
+    font-size: 36px;
+}
+.menu h3,h4{
+    font-weight: 900;
+    font-size: 28px;
+}
+.menu p{
+    font-weight: 600;
+}
+h1{
+    float: left;
+    margin-top: -5px;
+}
+hr{
+    border: 0.8px solid;
+    width: 50%;
+}
+img{
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    height: auto;
+}
+nav{
+    float: right;
+    display:inline;
+    list-style: none;
+    padding-left: 0;
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav li a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+}
+nav li {
+    display: inline;
+    border-right: 1.2px solid rgb(141, 141, 141);
+    
+}
+footer{
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.contact{
+    text-align: center;
+    margin: auto;
+}
+.allas{
+    margin: auto;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(145, 5, 5);
+}
+nav .active {
+    color: rgba(160, 0, 0, 0.5);
+}
+nav li a:hover {
+	color: rgb(145, 5, 5);
+}
+.webshop{
+    text-align: left;
+    margin: auto;
+}
+input[type="number"], text{
+    background-color: transparent;
+    font-size: 0.6em;
+}
+table#webshop{
+    border-collapse: collapse;
+    border: 1px solid transparent;
+    text-align: left;
+}
+table#webshop td{
+    margin: 30px;
+    font-size: 0.9em;
+    text-align: left;
+}
+.bemutatkozas{
+    text-align: center;
+}
+.galleria-container{
+    margin: auto;
+}
+.imagetext{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    margin: auto;
+}
+form{
+    font-size: 1.5em;
+    text-align: left;
+    margin: auto;
+}
+label.error{
+    color: red;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+[class*="col-"] {
+    float: right;
+    padding: 5px;
+    width: 100%;
+    }
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (min-width: 600px)  { /* mobile */
+
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+ @media only screen and (min-width: 768px) { /* pc */
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+ }

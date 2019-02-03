@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<HTML class="job-bg" lang="hu">
+<head>
+<title>Vantablack Coffee</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="author" content="Kunkli Aron">
+<meta name="description" content="Vantablack Coffee Shop">
+<link rel="stylesheet"  href="Coffee.css">
+<meta charset="utf-8">
+<link rel="icon" href="kepek/favicon2.png" type="image/x-icon" >
+<script src="jquery/galleria/jquery-3.3.1.js"></script>
+<script src="jquery//dist/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $("#job").validate({
+        
+        rules: {
+            Veznev: "required",
+            Kernev: "required",
+            Szuletesh: "required",
+            },
+            messages: {
+            Veznev: " Ird be a vezetekneved!",
+            Kernev: " Ird be a keresztneved!",
+            Szuletesi: "Ird be a szuletesi idodet nn/hh/eeee formatumban!",
+            Szuletesh: " Ird be a szuletesi helyed!",
+            Nem: "Valaszd ki a nemedet!",
+            Email: "Adj meg valodi email cimet!",
+            Telefonszam: "Adj meg letezo telefonszamot!",
+            },
+    });
+    });
+</script>
+       
+</head>
+<body>
+    <div class="row">
+            <header class="col-12 col-m-12"><h1>Vantablack Coffee</h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="webshop.html">Webshop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+<div class="row">
+    <div class="col-12 col-t-10">
+        <form action="http://szamtud.uni-corvinus.hu/~blang/receive.php" class="job" method="post" id="job" novalidate="novalidate"> 
+           <p><label for="Veznev">Vezetéknév: </label><input type="text" name="Veznev" id="Veznev" size="20" required></p>
+
+           <p><label for="Kernev">Keresztnév: </label><input type="text" name="Kernev" id="Kernev" size="20" required></p>
+
+           <p><label for="Szuletesi">Születési idő: </label><input type="date" name="Szuletesi" id="Szuletesi" size="20" required></p>
+
+           <p><label for="Szuletesh">Születési hely: </label><input type="text" name="Szuletesh" id="Szuletesh" size="20" required></p>
+
+           <p>
+               <label for="Nem">Nem: </label>
+               <input type="text" list="nemek" name="Nem" id="Nem" size="20" required>
+               <datalist id="nemek">
+                   <option value="Fiú">
+                   <option value="Lány">
+                   <option value="Egyéb">
+               </datalist>
+            </p>
+
+           <p><label for="Email">Email: </label><input type="email" name="Email" id="Email" size="20" required></p>
+
+           <p><label for="Telefonszam">Telefonszám: </label><input type="tel" name="Telefonszam" id="Telefonszam" size="20" required></p>
+           <input type="submit" value="Jelentkezem"> <input type="reset" value="Torles">
+        </form>
+    </div>
+</div>

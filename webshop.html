@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<HTML class="webshop-bg" lang="hu">
+<head>
+<title>Vantablack Coffee</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="author" content="Kunkli Aron">
+<meta name="description" content="Vantablack Coffee Shop">
+<link rel="stylesheet"  href="Coffee.css">
+<meta charset="utf-8">
+<link rel="icon" href="kepek/favicon2.png" type="image/x-icon" >
+<script src="jquery/galleria/jquery-3.3.1.js"></script>
+<script>
+    function Kosar(){
+
+        var  fullcart = [];
+        var str = "";
+
+
+        $(".webshop").find("td").each(function(){
+            var count = $(this).find(".CoffeeQuantity").val();
+            if (count > 0)
+            {
+                var entity = {
+                    name: $(this).find(".CoffeeName").text(),
+                    price: $(this).find(".CoffeePrice").text(),
+                    quantity: count
+                }
+                fullcart.push(entity);
+            }
+        })
+        fullcart.forEach(function(coffee) {
+            str += "Coffee name: " + coffee.name + ", " + "Coffee price: " + coffee.price * coffee.quantity + " HUF" + "\n" ;
+        });
+
+        var buy = window.confirm("Az altalad vasarolt termekek:" + "\n" + "\n" + str + "\n" + "Ha megszeretne vasarolni a termekeket kattintson az 'OK' gombra, ellenkezo esetben pedig a 'MEGSE' gombra!");
+        if (buy == true)
+        {
+            alert("A vasarlas leadasahoz mar csak az oldal legaljan levo 'VASARLAS' nevu gombra kell kattintania!");
+        }
+        else
+        {
+            alert("Vasarlasa megszakitva!");
+        }
+    }
+</script>
+<script>
+    function Send(){
+        alert("A vasarlasat rogzitettuk, koszonjuk hogy nalunk vasarolt!" + "\n" + "Rendeles utan telefonos egyeztetes szukseges a kovetkezo szamon: 06 (1) 854 6528 !" + "\n" + "Megertesuket koszunjuk!");
+    }
+</script>
+</head>
+<body>
+    <div class="row">
+        <header class="col-12 col-m-12"><h1>Vantablack Coffee</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#" class="active">Webshop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-12 col-m-12">
+            <form>
+                <table class="webshop" id="webshop">
+                        <tr>
+                            <td>
+                                <figure>
+                                    <img src="kepek/Webshop/1.jpg" alt="Meloria" class="col-6 col-m-6">
+                                    <figcaption><span class="CoffeeName">Meloria </span><span class="CoffeePrice">3200</span> HUF*</figcaption>
+                                </figure>
+                                <p>Rendelni kivant mennyiseg <input type="number" class="CoffeeQuantity" min="0" name="mennyiseg" value="0" size="5"></p> 
+                            </td>
+                            <td>
+                                <figure>
+                                    <img src="kepek/Webshop/2.jpg" alt="Roma" class="col-6 col-m-6">
+                                    <figcaption><span class="CoffeeName">Roma </span><span class="CoffeePrice">3200</span> HUF*</figcaption>
+                                </figure>
+                                <p>Rendelni kivant mennyiseg <input type="number" class="CoffeeQuantity" min="0" name="mennyiseg" value="0" size="5"></p>
+                            </td>
+                        </tr> 
+                            
+                        <tr>
+                            <td>
+                                <figure>
+                                    <img src="kepek/Webshop/3.jpg" alt="Gorgona" class="col-6 col-m-6">
+                                    <figcaption><span class="CoffeeName">Gorgona </span><span class="CoffeePrice">3200</span> HUF*</figcaption>
+                                </figure>
+                                <p>Rendelni kivant mennyiseg <input type="number" class="CoffeeQuantity" min="0" name="mennyiseg" value="0" size="5"></p>
+                            </td>
+                            <td>
+                                <figure>
+                                    <img src="kepek/Webshop/4.jpg" alt="Mockacrema" class="col-6 col-m-6">
+                                    <figcaption><span class="CoffeeName">Mockacrema </span><span class="CoffeePrice">3200</span> HUF*</figcaption>
+                                </figure>
+                                <p>Rendelni kivant mennyiseg <input type="number" class="CoffeeQuantity" min="0" name="mennyiseg" value="0" size="5"></p>
+                            </td>
+                        </tr>  
+    
+                        <tr>
+                            <td>
+                                <figure>
+                                    <img src="kepek/Webshop/5.png" alt="Brazil" class="col-6 col-m-6">
+                                    <figcaption><span class="CoffeeName">Brazil </span><span class="CoffeePrice">3200</span> HUF*</figcaption>
+                                </figure>
+                                <p>Rendelni kivant mennyiseg <input type="number" class="CoffeeQuantity" min="0" name="mennyiseg" value="0" size="5"></p>
+                            </td>
+                            <td>
+                                <figure>
+                                    <img src="kepek/Webshop/6.png" alt="Ethiopia" class="col-6 col-m-6">
+                                    <figcaption><span class="CoffeeName">Ethiopia </span><span class="CoffeePrice">3200</span> HUF*</figcaption>
+                                </figure>
+                                <p>Rendelni kivant mennyiseg <input type="number" class="CoffeeQuantity" min="0" name="mennyiseg" value="0" size="5"></p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <figure>
+                                    <img src="kepek/Webshop/7.png" alt="Nepal" class="col-6 col-m-6">
+                                    <figcaption><span class="CoffeeName">Nepal </span><span class="CoffeePrice">3200</span> HUF*</figcaption>
+                                </figure>
+                                <p>Rendelni kivant mennyiseg <input type="number" class="CoffeeQuantity" min="0" name="mennyiseg" value="0" size="5"></p>
+                            </td>
+                            <td>
+                                <figure>
+                                    <img src="kepek/Webshop/8.png" alt="Jamaica" class="col-6 col-m-6">
+                                    <figcaption><span class="CoffeeName">Jamaica </span><span class="CoffeePrice">3200</span> HUF*</figcaption>
+                                </figure>
+                                <p>Rendelni kivant mennyiseg <input type="number" class="CoffeeQuantity" min="0" name="mennyiseg" value="0" size="5"></p>
+                            </td>
+                        </tr>
+                            
+                        <tr>
+                            <td>
+                                <input type="button" name="cart" value="Kosar tartalma" onclick="Kosar()">
+                            </td>
+                            <td>
+                                <input type="button" name="buy" value="Vasarlas" onclick="Send()">
+                            </td>
+                        </tr>
+                    </table>
+            </form>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-12 col-m-12">
+        <footer>*Termekeink CSAK 200g-os kiszerelesben erhetoek el</footer>
+    </div>
+</div>
+</body>
+</HTML>
